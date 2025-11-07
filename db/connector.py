@@ -1,5 +1,5 @@
 import asyncpg
-from settings import settings
+from .settings import settings
 
 async def get_db_connection():
     conn = await asyncpg.connect(settings.DB_URL)
